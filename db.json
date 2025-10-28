@@ -1,3 +1,40 @@
 {
-  "messages": []
+  "messages": [
+    {
+      "role": "user",
+      "content": "Hi, my name is Anton",
+      "id": "bc503c50-bc12-4b3d-bce8-2aaf71437908",
+      "timestamp": "2025-10-28T08:35:33.045Z"
+    },
+    {
+      "role": "user",
+      "content": "Tell me what's my name",
+      "id": "ac2dacd2-8bac-4a71-8f3b-facc58db5bca",
+      "timestamp": "2025-10-28T08:36:08.669Z"
+    },
+    {
+      "role": "user",
+      "content": "What's the weather in Auckland?",
+      "id": "96f0eed0-79c1-4fcb-921d-e4757f94531d",
+      "timestamp": "2025-10-28T09:54:01.479Z"
+    },
+    {
+      "role": "assistant",
+      "content": null,
+      "tool_calls": [
+        {
+          "id": "call_8RfYzG52pV0Fo6WSEp4aYjhJ",
+          "type": "function",
+          "function": {
+            "name": "get_weather",
+            "arguments": "{}"
+          }
+        }
+      ],
+      "refusal": null,
+      "annotations": [],
+      "id": "8de67fa4-8a43-41a6-9a80-dde2b105a526",
+      "timestamp": "2025-10-28T09:54:05.478Z"
+    }
+  ]
 }
