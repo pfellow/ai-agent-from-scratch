@@ -41,3 +41,12 @@ export async function getMessages(): Promise<AIMessage[]> {
   const db = await getDb()
   return db.data.messages.map(removeMetaData)
 }
+
+export async function saveToolResponse(
+  toolCallId: string,
+  toolResponse: string
+) {
+  return await addMessages([
+    { role: 'tool', content: toolResponse, tool_call_id: toolCallId },
+  ])
+}

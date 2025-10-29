@@ -2,28 +2,16 @@
   "messages": [
     {
       "role": "user",
-      "content": "Hi, my name is Anton",
-      "id": "bc503c50-bc12-4b3d-bce8-2aaf71437908",
-      "timestamp": "2025-10-28T08:35:33.045Z"
-    },
-    {
-      "role": "user",
-      "content": "Tell me what's my name",
-      "id": "ac2dacd2-8bac-4a71-8f3b-facc58db5bca",
-      "timestamp": "2025-10-28T08:36:08.669Z"
-    },
-    {
-      "role": "user",
-      "content": "What's the weather in Auckland?",
-      "id": "96f0eed0-79c1-4fcb-921d-e4757f94531d",
-      "timestamp": "2025-10-28T09:54:01.479Z"
+      "content": "Give me the current weather",
+      "id": "e86d81b3-0162-4f04-bf19-75c61b63790d",
+      "timestamp": "2025-10-29T10:08:29.359Z"
     },
     {
       "role": "assistant",
       "content": null,
       "tool_calls": [
         {
-          "id": "call_8RfYzG52pV0Fo6WSEp4aYjhJ",
+          "id": "call_7cJxJbJn3awN8QTcGn5jEltF",
           "type": "function",
           "function": {
             "name": "get_weather",
@@ -33,8 +21,29 @@
       ],
       "refusal": null,
       "annotations": [],
-      "id": "8de67fa4-8a43-41a6-9a80-dde2b105a526",
-      "timestamp": "2025-10-28T09:54:05.478Z"
+      "id": "45b51876-17a7-470a-90e6-6690a31cec50",
+      "timestamp": "2025-10-29T10:08:33.291Z"
+    },
+    {
+      "role": "tool",
+      "content": "very cold. 17deg",
+      "tool_call_id": "call_7cJxJbJn3awN8QTcGn5jEltF",
+      "id": "80802184-761d-4577-91d8-72b47af501e3",
+      "timestamp": "2025-10-29T10:08:33.295Z"
+    },
+    {
+      "role": "user",
+      "content": "so what what the weather?",
+      "id": "4cf4ebb8-39cf-4d25-8d9d-69f27a25c8fb",
+      "timestamp": "2025-10-29T10:09:48.631Z"
+    },
+    {
+      "role": "assistant",
+      "content": "It's very cold right now—about 17 degrees. Want me to convert to Fahrenheit or give a forecast for the next few hours?",
+      "refusal": null,
+      "annotations": [],
+      "id": "4d0334f0-4fa0-4d3c-9ec1-3dea7d2ecb63",
+      "timestamp": "2025-10-29T10:09:54.429Z"
     }
   ]
 }
