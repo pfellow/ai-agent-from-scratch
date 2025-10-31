@@ -12,7 +12,7 @@ export const reddit: ToolFn = async () => {
   const response = await fetch('https://www.reddit.com/r/popular/top.json')
   const data = await response.json()
 
-  const relevantInfo = data.children.map((child: any) => ({
+  const relevantInfo = data.data.children.map((child: any) => ({
     title: child.data.title,
     link: child.data.url,
     subreddit: child.data.subreddit_name_prefixed,

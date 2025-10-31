@@ -2,7 +2,6 @@ import type OpenAI from 'openai'
 import {
   generateImage,
   generateImageToolDefinition,
-  ,
 } from './tools/generateImage'
 import { reddit, redditToolDefinition } from './tools/reddit'
 import { dadJoke, dadJokeToolDefinition } from './tools/dadJoke'
